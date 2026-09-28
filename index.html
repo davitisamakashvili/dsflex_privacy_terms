@@ -4,56 +4,154 @@
 <meta charset="utf-8">
 <title>DSFlex ECA — Legal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy and Terms of Use for the DSFlex ECA ethanol content analyzer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #0A0A0A;
-    color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 24px;
+  :root{
+    --bg:#0A0A0A;
+    --card:#121212;
+    --border:#232323;
+    --lime:#D4FF3D;
+    --lime-dim:#9FCF1F;
+    --text:#F5F5F5;
+    --muted:#8A8F98;
   }
-  .card {
-    max-width: 420px;
-    width: 100%;
-    text-align: center;
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(212,255,61,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 400px at 90% 100%, rgba(212,255,61,0.05), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:48px 20px;
+    overflow-x:hidden;
   }
-  h1 {
-    font-size: 22px;
-    margin-bottom: 8px;
+  .wrap{max-width:440px; width:100%; text-align:center;}
+
+  .glow-mark{
+    position:relative;
+    width:120px;
+    height:120px;
+    margin:0 auto 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
-  p {
-    color: #9CA3AF;
-    font-size: 14px;
-    margin-bottom: 32px;
+  .glow-mark::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle, rgba(212,255,61,0.35), transparent 70%);
+    filter:blur(18px);
+    transform:scale(1.3);
   }
-  a.link {
-    display: block;
-    background: #1A1A1A;
-    border: 1px solid #2A2A2A;
-    border-radius: 12px;
-    padding: 16px 20px;
-    color: #F5F5F5;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 14px;
-    transition: background 0.15s ease;
+  .glow-mark img{position:relative; width:88px; height:auto; filter:drop-shadow(0 4px 18px rgba(212,255,61,0.25));}
+
+  .word{
+    font-weight:700;
+    font-size:26px;
+    letter-spacing:-0.3px;
+    margin:6px 0 2px;
   }
-  a.link:hover {
-    background: #242424;
+  .word span{color:var(--lime);}
+  .tagline{
+    color:var(--muted);
+    font-size:13px;
+    letter-spacing:0.3px;
+    margin-bottom:44px;
   }
+
+  .links{display:flex; flex-direction:column; gap:14px;}
+
+  a.link{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:linear-gradient(180deg, #161616, #101010);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:18px 20px;
+    color:var(--text);
+    text-decoration:none;
+    text-align:left;
+    overflow:hidden;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  a.link:hover{
+    border-color:rgba(212,255,61,0.5);
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px -10px rgba(212,255,61,0.25);
+  }
+  a.link:active{transform:translateY(0);}
+
+  .link-icon{
+    flex-shrink:0;
+    width:42px;
+    height:42px;
+    border-radius:11px;
+    background:rgba(212,255,61,0.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--lime);
+    transition:background .2s ease;
+  }
+  a.link:hover .link-icon{background:rgba(212,255,61,0.18);}
+
+  .link-body{flex:1; min-width:0;}
+  .link-title{font-size:15.5px; font-weight:600; margin-bottom:2px;}
+  .link-sub{font-size:12.5px; color:var(--muted);}
+
+  .chev{flex-shrink:0; color:var(--muted); transition:transform .2s ease, color .2s ease;}
+  a.link:hover .chev{transform:translateX(3px); color:var(--lime);}
+
+  .foot{margin-top:44px; color:#4A4A4A; font-size:12px;}
+  .foot a{color:#6B6B6B; text-decoration:none;}
+  .foot a:hover{color:var(--muted);}
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>DSFlex ECA</h1>
-    <p>Legal documents for the DSFlex ECA hardware and app.</p>
-    <a class="link" href="PRIVACY.html">Privacy Policy</a>
-    <a class="link" href="TERMS.html">Terms of Use &amp; Disclaimer</a>
+  <div class="wrap">
+    <div class="glow-mark">
+      <img src="logo-mark.png" alt="DSFlex ECA">
+    </div>
+    <div class="word"><span>DS</span>Flex ECA</div>
+    <div class="tagline">PRECISE ETHANOL SENSING FOR EVERY DRIVE</div>
+
+    <div class="links">
+      <a class="link" href="PRIVACY.html">
+        <span class="link-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+        </span>
+        <span class="link-body">
+          <div class="link-title">Privacy Policy</div>
+          <div class="link-sub">How the app handles your data</div>
+        </span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="link" href="TERMS.html">
+        <span class="link-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6M9 16h6M9 8h3M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/></svg>
+        </span>
+        <span class="link-body">
+          <div class="link-title">Terms of Use</div>
+          <div class="link-sub">Disclaimer &amp; liability</div>
+        </span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+    </div>
+
+    <div class="foot">© 2026 DSFlex · <a href="mailto:davitisamakashvili@gmail.com">Contact</a></div>
   </div>
 </body>
 </html>
