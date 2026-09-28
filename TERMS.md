@@ -45,4 +45,4 @@ We may update these terms from time to time. Continued use of the Device or App 
 
 ## Contact Us
 
-Questions about these terms: **[your support email]**
+Questions about these terms: **davitisamakashvili@gmail.com**
