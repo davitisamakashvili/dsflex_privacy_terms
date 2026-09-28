@@ -34,4 +34,4 @@ We may update this policy from time to time. Changes will be posted here with a 
 
 ## Contact Us
 
-Questions about this policy: **[your support email]**
+Questions about this policy: **davitisamakashvili@gmail.com**
